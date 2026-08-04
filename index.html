@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>WatchPoint Security — Видеонаблюдение и системы безопасности in Узбекистане</title>
-  <meta name="description" content="Монтаж и интеграция систем видеонаблюдения, СКУД и ИТ-инфраструктуры в Ташкенте. Официальный интегратор Hikvision, Tiandy, UniFi, UNV.">
-  <meta name="keywords" content="видеонаблюдение, системы безопасности, монтаж камер, контроль доступа, охранные системы, Ташкент, Узбекистан, WatchPoint Security, Hikvision, Tiandy, UniFi, UNV">
+  <title>WatchPoint Security — Видеонаблюдение, СКУД и смарт-замки в Узбекистане</title>
+  <meta name="description" content="Монтаж и интеграция систем видеонаблюдения, умных замков Lenios, СКУД и ИТ-инфраструктуры в Ташкенте. Официальный интегратор Hikvision, Tiandy, Lenios, UniFi, UNV.">
+  <meta name="keywords" content="видеонаблюдение, смарт замки, умные замки, Lenios, системы безопасности, монтаж камер, контроль доступа, СКУД, Ташкент, Узбекистан, WatchPoint Security, Hikvision, Tiandy, UniFi, UNV">
   <meta name="robots" content="index, follow">
 
   <meta property="og:title" content="WatchPoint Security — Видеонаблюдение и системы безопасности">
-  <meta property="og:description" content="Надёжная защита вашего бизнеса и дома в Узбекистане. Реализованные кейсы, готовые комплекты оборудования под ключ и официальный договор.">
+  <meta property="og:description" content="Надёжная защита вашего бизнеса и дома в Узбекистане. Умные замки, биометрия, готовые комплекты оборудования под ключ и официальный договор.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://watchpoint.uz">
   <meta property="og:image" content="slide1.png.png">
@@ -142,6 +142,32 @@
     .brand-tags { font-size: 0.8rem; font-weight: 700; color: var(--brand); margin-bottom: 12px; letter-spacing: 0.5px; }
     .price-tag { font-size: 1.1rem; font-weight: 700; color: var(--active); border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px; }
 
+    /* LENIOS LOCKS SECTION STYLES */
+    .lenios-unlock-grid {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1100px; margin: 0 auto 40px;
+    }
+    .lenios-unlock-card {
+      flex: 1 1 180px; max-width: 200px; background: var(--panel); border-radius: 14px; padding: 22px 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); text-align: center;
+      transition: transform 0.25s;
+    }
+    .lenios-unlock-card:hover { transform: translateY(-4px); }
+    .lenios-icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .lenios-unlock-card h4 { font-size: 1.1rem; color: #0a0f1e; margin-bottom: 6px; }
+    .lenios-unlock-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.4; }
+
+    .lenios-features-box {
+      max-width: 1100px; margin: 0 auto 35px; background: var(--panel); border-radius: 16px; padding: 30px;
+      text-align: left; box-shadow: 0 10px 25px rgba(0,0,0,0.04); border-left: 4px solid var(--active);
+    }
+    .lenios-features-box h3 { font-size: 1.25rem; color: #0a0f1e; margin-bottom: 18px; text-align: center; }
+    .lenios-features-list {
+      list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;
+    }
+    .lenios-features-list li { font-size: 0.95rem; color: var(--muted); line-height: 1.5; display: flex; align-items: start; gap: 8px; }
+    .lenios-features-list li strong { color: #0a0f1e; }
+    .lenios-features-list li::before { content: '✔'; color: var(--active); font-weight: bold; flex-shrink: 0; }
+
     /* BUNDLES */
     .bundles-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 26px; max-width: 1200px; margin: 0 auto; }
     .bundle-card {
@@ -257,10 +283,10 @@
     .seo-text-block p { margin-bottom: 10px; }
 
     footer { padding: 30px; text-align: center; background: #ffffff !important; color: #718096; font-size: 0.9rem; border-top: 1px solid rgba(0,0,0,0.06); }
-    #about, #features, #standards, #services, #bundles, #projects, #reviews, #faq, #contacts { scroll-margin-top: 80px; }
+    #about, #features, #standards, #services, #smart-locks, #bundles, #projects, #reviews, #faq, #contacts { scroll-margin-top: 80px; }
 
     section#features, section#services, section#projects, section#faq { background-color: #ffffff !important; }
-    section#about, section#standards, section#bundles, section#reviews, section#contacts { background-color: #f4f7fc !important; }
+    section#about, section#standards, section#smart-locks, section#bundles, section#reviews, section#contacts { background-color: #f4f7fc !important; }
 
     #toTop {
       position: fixed; right: 18px; bottom: 18px; width: 50px; height: 50px; border-radius: 14px;
@@ -277,6 +303,7 @@
     <a href="#features">Преимущества</a>
     <a href="#standards">Стандарты</a>
     <a href="#services">Услуги</a>
+    <a href="#smart-locks">Смарт-замки</a>
     <a href="#bundles">Комплекты</a>
     <a href="#projects">Проекты</a>
     <a href="#reviews">Отзывы</a>
@@ -323,7 +350,7 @@
   <section id="about">
     <h2>🔎 О компании</h2>
     <p class="section-desc">
-      <strong>WatchPoint Security</strong> — инжиниринговая компания из Ташкента, специализирующаяся на проектировании, поставке и монтаже комплексных систем безопасности. Мы разрабатываем и внедряем отказоустойчивые цифровые решения для защиты промышленных объектов, логистических центров, коммерческих offices и частного сектора по всей территории Республики Узбекистан.
+      <strong>WatchPoint Security</strong> — инжиниринговая компания из Ташкента, специализирующаяся на проектировании, поставке и монтаже комплексных систем безопасности. Мы разрабатываем и внедряем отказоустойчивые цифровые решения для защиты промышленных объектов, логистических центров, коммерческих офисов и частного сектора по всей территории Республики Узбекистан.
     </p>
   </section>
 
@@ -380,16 +407,16 @@
         <div class="price-tag">от 1 200 000 сум</div>
       </div>
       <div class="card">
-        <div class="brand-tags">БИОМЕТРИЯ / RFID / ШЛАГБАУМЫ</div>
-        <h3>🔐 Контроль доступа (СКУД)</h3>
-        <p>Установка терминалов распознавания лиц, турникетов, RFID-считывателей и электромагнитных замков. Полная автоматизация учёта рабочего времени.</p>
-        <div class="price-tag">от 1 500 000 сум</div>
+        <div class="brand-tags">LENIOS / TUYA / TTLOCK</div>
+        <h3>🔐 Умные смарт-замки</h3>
+        <p>Установка биометрических электронных замков для квартир, коттеджей и офисов. Открытие по Face ID, отпечатку пальца, ПИН-коду и через смартфон.</p>
+        <div class="price-tag">от 1 800 000 сум</div>
       </div>
       <div class="card">
-        <h3>🚨 Охранные системы</h3>
-        <div class="brand-tags">ОХРАННО-ПОЖАРНЫЕ КОМПЛЕКСЫ</div>
-        <p>Монтаж современных датчиков движения, размыкания, разбития стекла и систем пожарной сигнализации. Мгновенные пуш-уведомления о тревоге на ваш телефон.</p>
-        <div class="price-tag">от 900 000 сум</div>
+        <div class="brand-tags">БИОМЕТРИЯ / RFID / ШЛАГБАУМЫ</div>
+        <h3>🚪 Контроль доступа (СКУД)</h3>
+        <p>Установка терминалов распознавания лиц, турникетов, RFID-считывателей и электромагнитных замков. Полная автоматизация учёта рабочего времени.</p>
+        <div class="price-tag">от 1 500 000 сум</div>
       </div>
       <div class="card">
         <div class="brand-tags">CISCO / UNIFI / МЕДИАКОНВЕРТЕРЫ</div>
@@ -397,6 +424,63 @@
         <p>Монтаж структурированных кабельных сетей (СКС), настройка бесшовного Wi-Fi, коммутаторов, SFP-модулей, оптических трасс и сборка серверных шкафов.</p>
         <div class="price-tag">от 2 000 000 сум</div>
       </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION: LENIOS SMART LOCKS -->
+  <section id="smart-locks">
+    <h2>🔐 Умные замки Lenios Tech — Безопасность без ключей</h2>
+    <p class="section-desc">
+      Интегрируем в наши проекты интеллектуальные электронные замки от ведущего мирового производителя <strong>Lenios Tech</strong> (30+ лет опыта в технологиях безопасности). Идеальное решение для квартир, частных домов, офисов и коммерческой недвижимости.
+    </p>
+
+    <div class="lenios-unlock-grid">
+      <div class="lenios-unlock-card">
+        <div class="lenios-icon">👤</div>
+        <h4>Face ID</h4>
+        <p>Распознавание лиц за 0.3 секунды без прикосновений</p>
+      </div>
+
+      <div class="lenios-unlock-card">
+        <div class="lenios-icon">👆</div>
+        <h4>Отпечаток</h4>
+        <p>Быстрый сканер биометрии прямо на ручке замка</p>
+      </div>
+
+      <div class="lenios-unlock-card">
+        <div class="lenios-icon">📱</div>
+        <h4>Смартфон</h4>
+        <p>Удаленный доступ и временные ключи через App</p>
+      </div>
+
+      <div class="lenios-unlock-card">
+        <div class="lenios-icon">🔢</div>
+        <h4>ПИН & Карты</h4>
+        <p>Удобный доступ по коду или RFID-карте для всей семьи</p>
+      </div>
+
+      <div class="lenios-unlock-card">
+        <div class="lenios-icon">🔑</div>
+        <h4>Аварийный ключ</h4>
+        <p>Механический ключ на случай полного разряда батареи</p>
+      </div>
+    </div>
+
+    <div class="lenios-features-box">
+      <h3>Почему мы устанавливаем замки Lenios в наших проектах:</h3>
+      <ul class="lenios-features-list">
+        <li><strong>Прочный корпус:</strong> Корпус из высокопрочных сплавов (Aluminium Alloy) и усиленные врезные механизмы.</li>
+        <li><strong>Встроенный видеодомофон:</strong> Трансляция изображения гостя прямо на экран вашего смартфона.</li>
+        <li><strong>Полная автономность:</strong> Емкие аккумуляторы обеспечивают работу даже при отключении электричества.</li>
+        <li><strong>Международный стандарт:</strong> Сертифицированное качество производства по стандартам ISO9001 и ISO27001.</li>
+      </ul>
+    </div>
+
+    <div style="display:flex; justify-content:center;">
+      <a href="https://t.me/watchpointcctv24" target="_blank" class="contact-button cb-cta" style="font-weight:700; max-width: 320px !important;">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        Подобрать смарт-замок под вашу дверь
+      </a>
     </div>
   </section>
 
@@ -584,8 +668,8 @@
 
     <div class="seo-text-block">
       <h4>Профессиональное проектирование и монтаж систем безопасности в Узбекистане</h4>
-      <p>Инжиниринговая компания <strong>WatchPoint Security</strong> осуществляет комплексную интеграцию слаботочных сетей и цифровых экосистем контроля по всей территории Ташкента, Ташкентской области (включая Чирчик, Алмалык, Ангрен) и других регионов Республики Узбекистан. Мы специализируемся на проектировании высокоточных IP-систем видеонаблюдения, биометрического контроля доступа (СКУД), автоматических турникетов, датчиков охраны периметра и ИТ-инфраструктуры (ЛВС, оптические линии связи, серверные шкафы).</p>
-      <p>Благодаря статусу официального интегратора передового оборудования от брендов мирового уровня — <strong>Hikvision, Tiandy, UNV (Uniview) и UniFi</strong> — мы гарантируем бескомпромиссную отказоустойчивость систем. Обслуживание объектов коммерческой недвижимости, складов, производственных предприятий и частных загородных резиденций производится строго по договору по перечислению (с НДС), с предоставлением полной гарантии 1 год.</p>
+      <p>Инжиниринговая компания <strong>WatchPoint Security</strong> осуществляет комплексную интеграцию слаботочных сетей и цифровых экосистем контроля по всей территории Ташкента, Ташкентской области (включая Чирчик, Алмалык, Ангрен) и других регионов Республики Узбекистан. Мы специализируемся на проектировании высокоточных IP-систем видеонаблюдения, умных электронных смарт-замков, биометрического контроля доступа (СКУД), автоматических турникетов, датчиков охраны периметра и ИТ-инфраструктуры (ЛВС, оптические линии связи, серверные шкафы).</p>
+      <p>Благодаря статусу официального интегратора передового оборудования от брендов мирового уровня — <strong>Hikvision, Tiandy, Lenios, UNV (Uniview) и UniFi</strong> — мы гарантируем бескомпромиссную отказоустойчивость систем. Обслуживание объектов коммерческой недвижимости, складов, производственных предприятий и частных загородных резиденций производится строго по договору по перечислению (с НДС), с предоставлением полной гарантии 1 год.</p>
     </div>
   </section>
 
